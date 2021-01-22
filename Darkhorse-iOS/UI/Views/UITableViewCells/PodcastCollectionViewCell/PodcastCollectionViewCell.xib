@@ -29,11 +29,22 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vr-bS-wiL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="2h3-zF-fY9"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8vr-bS-wiL" secondAttribute="trailing" id="MUD-uJ-fGk"/>
                     <constraint firstItem="f3L-J7-QBQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rdy-dM-E79"/>
                     <constraint firstItem="f3L-J7-QBQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZoJ-v9-Gxw"/>
+                    <constraint firstAttribute="bottom" secondItem="8vr-bS-wiL" secondAttribute="bottom" id="cea-eE-ipI"/>
+                    <constraint firstItem="8vr-bS-wiL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cwH-vZ-zgu"/>
                     <constraint firstAttribute="trailing" secondItem="f3L-J7-QBQ" secondAttribute="trailing" id="n00-r3-vZQ"/>
+                    <constraint firstItem="8vr-bS-wiL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="soo-dh-Omf"/>
                     <constraint firstAttribute="bottom" secondItem="f3L-J7-QBQ" secondAttribute="bottom" id="yHP-b5-aSI"/>
                 </constraints>
             </tableViewCellContentView>
