@@ -23,7 +23,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaa-bd-1mD">
                             <rect key="frame" x="8" y="10" width="290" height="30"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbS-8H-TI4">
@@ -31,14 +31,16 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="qrk-zh-3IG"/>
                             </constraints>
-                            <state key="normal" title="View all"/>
+                            <state key="normal" title="View all">
+                                <color key="titleColor" red="0.78365117309999999" green="0.52135157590000003" blue="0.11361361289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="sectionPrimaryButtonAction:" destination="-1" eventType="touchUpInside" id="GOL-LN-LIC"/>
                                 <action selector="sectionPrimaryButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="e33-Wk-6D7"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="PbS-8H-TI4" firstAttribute="top" secondItem="z3g-kG-nSt" secondAttribute="top" constant="10" id="A5k-eC-ixZ"/>
                         <constraint firstItem="PbS-8H-TI4" firstAttribute="bottom" secondItem="Uaa-bd-1mD" secondAttribute="bottom" id="Hxg-Cn-17i"/>
@@ -50,7 +52,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <color key="backgroundColor" red="0.060680277650000003" green="0.060234673320000001" blue="0.14701253180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="z3g-kG-nSt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CBx-6c-jUd"/>
                 <constraint firstAttribute="bottom" secondItem="z3g-kG-nSt" secondAttribute="bottom" id="Qwj-Js-yda"/>

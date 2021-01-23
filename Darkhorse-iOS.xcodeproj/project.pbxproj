@@ -13,6 +13,16 @@
 		D726D23025BB7CC800A147F3 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D22F25BB7CC800A147F3 /* PopularViewController.swift */; };
 		D726D23225BB7CE100A147F3 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D23125BB7CE100A147F3 /* LibraryViewController.swift */; };
 		D726D23425BB7CF800A147F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D23325BB7CF800A147F3 /* SettingsViewController.swift */; };
+		D726D23725BB7D7A00A147F3 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D23525BB7D7A00A147F3 /* HeaderCell.swift */; };
+		D726D23825BB7D7A00A147F3 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D23625BB7D7A00A147F3 /* HeaderCell.xib */; };
+		D726D23C25BC4EF200A147F3 /* PodcastActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D23A25BC4EF200A147F3 /* PodcastActivityCell.swift */; };
+		D726D23D25BC4EF200A147F3 /* PodcastActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D23B25BC4EF200A147F3 /* PodcastActivityCell.xib */; };
+		D726D24125BC520200A147F3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D23F25BC520200A147F3 /* SettingsCell.swift */; };
+		D726D24225BC520200A147F3 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D24025BC520200A147F3 /* SettingsCell.xib */; };
+		D726D24625BC53FF00A147F3 /* BasicSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D24425BC53FF00A147F3 /* BasicSettingsCell.swift */; };
+		D726D24725BC53FF00A147F3 /* BasicSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D24525BC53FF00A147F3 /* BasicSettingsCell.xib */; };
+		D726D24B25BC54F800A147F3 /* StorageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D24925BC54F800A147F3 /* StorageCell.swift */; };
+		D726D24C25BC54F800A147F3 /* StorageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D24A25BC54F800A147F3 /* StorageCell.xib */; };
 		D79B346825B732FA00F2BE8A /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346725B732FA00F2BE8A /* Dictionary+Extensions.swift */; };
 		D79B346A25B7330900F2BE8A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346925B7330900F2BE8A /* String+Extension.swift */; };
 		D79B346C25B7341900F2BE8A /* UIColors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346B25B7341900F2BE8A /* UIColors+Extensions.swift */; };
@@ -71,6 +81,16 @@
 		D726D22F25BB7CC800A147F3 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		D726D23125BB7CE100A147F3 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		D726D23325BB7CF800A147F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D726D23525BB7D7A00A147F3 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		D726D23625BB7D7A00A147F3 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		D726D23A25BC4EF200A147F3 /* PodcastActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastActivityCell.swift; sourceTree = "<group>"; };
+		D726D23B25BC4EF200A147F3 /* PodcastActivityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastActivityCell.xib; sourceTree = "<group>"; };
+		D726D23F25BC520200A147F3 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D726D24025BC520200A147F3 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		D726D24425BC53FF00A147F3 /* BasicSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicSettingsCell.swift; sourceTree = "<group>"; };
+		D726D24525BC53FF00A147F3 /* BasicSettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicSettingsCell.xib; sourceTree = "<group>"; };
+		D726D24925BC54F800A147F3 /* StorageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCell.swift; sourceTree = "<group>"; };
+		D726D24A25BC54F800A147F3 /* StorageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageCell.xib; sourceTree = "<group>"; };
 		D79B346725B732FA00F2BE8A /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		D79B346925B7330900F2BE8A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D79B346B25B7341900F2BE8A /* UIColors+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+Extensions.swift"; sourceTree = "<group>"; };
@@ -153,6 +173,51 @@
 				D726D23325BB7CF800A147F3 /* SettingsViewController.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D726D23925BB7D7F00A147F3 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D23525BB7D7A00A147F3 /* HeaderCell.swift */,
+				D726D23625BB7D7A00A147F3 /* HeaderCell.xib */,
+			);
+			path = HeaderCell;
+			sourceTree = "<group>";
+		};
+		D726D23E25BC4EF900A147F3 /* PodcastActivityCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D23A25BC4EF200A147F3 /* PodcastActivityCell.swift */,
+				D726D23B25BC4EF200A147F3 /* PodcastActivityCell.xib */,
+			);
+			path = PodcastActivityCell;
+			sourceTree = "<group>";
+		};
+		D726D24325BC53E500A147F3 /* SettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D23F25BC520200A147F3 /* SettingsCell.swift */,
+				D726D24025BC520200A147F3 /* SettingsCell.xib */,
+			);
+			path = SettingsCell;
+			sourceTree = "<group>";
+		};
+		D726D24825BC540400A147F3 /* BasicSettingsCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D24425BC53FF00A147F3 /* BasicSettingsCell.swift */,
+				D726D24525BC53FF00A147F3 /* BasicSettingsCell.xib */,
+			);
+			path = BasicSettingsCell;
+			sourceTree = "<group>";
+		};
+		D726D24D25BC54FE00A147F3 /* StorageCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D24925BC54F800A147F3 /* StorageCell.swift */,
+				D726D24A25BC54F800A147F3 /* StorageCell.xib */,
+			);
+			path = StorageCell;
 			sourceTree = "<group>";
 		};
 		D79B347125B7378400F2BE8A /* PodcastCell */ = {
@@ -279,6 +344,11 @@
 				D7C76FB425B66A8200DC5CAC /* SearchCell */,
 				D7C76FA725B6632A00DC5CAC /* WelcomeCell */,
 				D79B347F25B73DD000F2BE8A /* PodcastCollectionViewCell */,
+				D726D23925BB7D7F00A147F3 /* HeaderCell */,
+				D726D23E25BC4EF900A147F3 /* PodcastActivityCell */,
+				D726D24825BC540400A147F3 /* BasicSettingsCell */,
+				D726D24325BC53E500A147F3 /* SettingsCell */,
+				D726D24D25BC54FE00A147F3 /* StorageCell */,
 			);
 			path = UITableViewCells;
 			sourceTree = "<group>";
@@ -418,12 +488,17 @@
 				D7C76FA625B6632400DC5CAC /* WelcomeCell.xib in Resources */,
 				D79B347525B7379600F2BE8A /* PodcastCell.xib in Resources */,
 				D79B347E25B73DCD00F2BE8A /* PodcastCollectionViewCell.xib in Resources */,
+				D726D24C25BC54F800A147F3 /* StorageCell.xib in Resources */,
 				D79B348425B73E3200F2BE8A /* PodcastCollectionCell.xib in Resources */,
 				D7C76F8925B6625000DC5CAC /* LaunchScreen.storyboard in Resources */,
 				D7C76F8625B6625000DC5CAC /* Assets.xcassets in Resources */,
+				D726D24725BC53FF00A147F3 /* BasicSettingsCell.xib in Resources */,
 				D79B347A25B73B9000F2BE8A /* BaseSectionHeader.xib in Resources */,
 				D726D22B25BB6CAC00A147F3 /* QuickActionView.xib in Resources */,
 				D7C76F8125B6624F00DC5CAC /* Main.storyboard in Resources */,
+				D726D24225BC520200A147F3 /* SettingsCell.xib in Resources */,
+				D726D23825BB7D7A00A147F3 /* HeaderCell.xib in Resources */,
+				D726D23D25BC4EF200A147F3 /* PodcastActivityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,12 +520,17 @@
 				D726D23225BB7CE100A147F3 /* LibraryViewController.swift in Sources */,
 				D7C76FE925B66BA500DC5CAC /* UIImage+Extensions.swift in Sources */,
 				D726D22E25BB76DA00A147F3 /* HomeViewController.swift in Sources */,
+				D726D24125BC520200A147F3 /* SettingsCell.swift in Sources */,
 				D79B347025B7343B00F2BE8A /* UIView+Extensions.swift in Sources */,
 				D7C76FB725B66A9A00DC5CAC /* SearchCell.swift in Sources */,
+				D726D23725BB7D7A00A147F3 /* HeaderCell.swift in Sources */,
+				D726D23C25BC4EF200A147F3 /* PodcastActivityCell.swift in Sources */,
+				D726D24625BC53FF00A147F3 /* BasicSettingsCell.swift in Sources */,
 				D7C76F7A25B6624F00DC5CAC /* AppDelegate.swift in Sources */,
 				D7C76FF125B66BA500DC5CAC /* UIApplication+Extension.swift in Sources */,
 				D7C76FF325B66BA500DC5CAC /* UISegmentedControl+Extensions.swift in Sources */,
 				D7C76FA525B6632400DC5CAC /* WelcomeCell.swift in Sources */,
+				D726D24B25BC54F800A147F3 /* StorageCell.swift in Sources */,
 				D726D22A25BB6CAC00A147F3 /* QuickActionView.swift in Sources */,
 				D79B346E25B7343400F2BE8A /* UITextView+Extensions.swift in Sources */,
 				D79B346C25B7341900F2BE8A /* UIColors+Extensions.swift in Sources */,

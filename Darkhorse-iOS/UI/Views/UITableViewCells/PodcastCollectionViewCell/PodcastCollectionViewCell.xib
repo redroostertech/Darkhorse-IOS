@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="157" id="KGk-i7-Jjw" customClass="PodcastCollectionViewCell" customModule="Darkhorse_iOS" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PodcastCollectionViewCell" rowHeight="157" id="KGk-i7-Jjw" customClass="PodcastCollectionViewCell" customModule="Darkhorse_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -31,7 +31,7 @@
                     </collectionView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vr-bS-wiL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.060680277650000003" green="0.060234673320000001" blue="0.14701253180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="2h3-zF-fY9"/>
                         </constraints>
@@ -48,11 +48,12 @@
                     <constraint firstAttribute="bottom" secondItem="f3L-J7-QBQ" secondAttribute="bottom" id="yHP-b5-aSI"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.060680277650000003" green="0.060234673320000001" blue="0.14701253180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="podcastCollectionView" destination="f3L-J7-QBQ" id="5CR-Tg-Acv"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="190.84821428571428"/>
+            <point key="canvasLocation" x="143" y="190"/>
         </tableViewCell>
     </objects>
 </document>
