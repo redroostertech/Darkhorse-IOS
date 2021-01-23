@@ -30,6 +30,7 @@ public let kPhotoShadowColor : UIColor = UIColor(white: 0,
                                                  alpha: 0.1)
 public let kProfilePhotoSize : CGFloat = 100
 public let kTopOfScreen = UIScreen.main.bounds.minY
+public let kTopOfScreenPlusStatusBar = UIApplication.statusBarHeight
 public let kBottomOfScreen = UIScreen.main.bounds.maxY
 public let kFarLeftOfScreen = UIScreen.main.bounds.minX
 public let kFarRightOfScreen = UIScreen.main.bounds.maxX
@@ -49,6 +50,7 @@ public let kBarBtnPoint = CGPoint(x: 0.0,
 public let kTextFieldPadding: CGFloat = 10.0
 public let kTextFieldIndent: CGFloat = 16.0
 public let kButtonRadius: CGFloat = 15.0
+public let kNavBarHeight: CGFloat = 100
 
 //  MARK:- UI + Colors
 public let kEnabledTextColor: UIColor = .darkText

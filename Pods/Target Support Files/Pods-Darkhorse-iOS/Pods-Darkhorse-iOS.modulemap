@@ -1,0 +1,6 @@
+framework module Pods_Darkhorse_iOS {
+  umbrella header "Pods-Darkhorse-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

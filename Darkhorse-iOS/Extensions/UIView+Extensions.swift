@@ -470,3 +470,275 @@ extension UIView {
     addGradientLayer(using: colorArray)
   }
 }
+
+extension UIView {
+  static var bundle: Bundle? {
+    let podBundle = Bundle(for: self)
+    guard let bundleURL = podBundle.url(forResource: "Darkhorse-iOS", withExtension: "bundle") else { return nil }
+    return Bundle(url: bundleURL)
+  }
+  
+  static func loadNib(nibName: String = String(describing: self)) -> UIView {
+    let bundle = Bundle(for: type(of: self) as! AnyClass)
+    //let nibName = type(of: self).description().components(separatedBy: ".").last!
+    let nib = UINib(nibName: nibName, bundle: bundle)
+    return nib.instantiate(withOwner: self, options: nil).first as! UIView
+  }
+}
+
+
+// MARK: - Global Toast for Map View or any other view
+
+public extension UIView {
+  
+//  private struct ToastKeys {
+//    static var toastAreEmpty = "sfmap.toast.toastAreEmpty"
+//    static var currentToastTag = "sfmap.toast.currentToastTag"
+//    static var activeToasts = "sfmap.toast.activeToasts"
+//    static var queue = "sfmap.toast.queue"
+//  }
+//
+//  struct ToastStyle {
+//    public init() {}
+//
+//    public var backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.8)
+//    public var titleColor: UIColor = .white
+//    public var messageColor: UIColor = .white
+//
+//    public var titleAlignment: NSTextAlignment = .left
+//    public var messageAlignment: NSTextAlignment = .left
+//    public var titleFont: UIFont = .boldSystemFont(ofSize: 16.0)
+//    public var messageFont: UIFont = .systemFont(ofSize: 16.0)
+//
+//    public var titleNumberOfLines = 0
+//    public var messageNumberOfLines = 0
+//
+//    public var horizontalPadding: CGFloat = 10.0
+//    public var verticalPadding: CGFloat = 10.0
+//    public var cornerRadius: CGFloat = 10.0
+//
+//    public var maxHeightPercentage: CGFloat = 0.8 {
+//      didSet {
+//        maxHeightPercentage = max(min(maxHeightPercentage, 1.0), 0.0)
+//      }
+//    }
+//    public var maxWidthPercentage: CGFloat = 0.8 {
+//      didSet {
+//        maxWidthPercentage = max(min(maxWidthPercentage, 1.0), 0.0)
+//      }
+//    }
+//
+//    public var imageSize = CGSize(width: 80.0, height: 80.0)
+//
+//    public var fadeDuration: TimeInterval = 0.2
+//  }
+//
+//  enum ToastPosition {
+//    case top
+//    case bottomCenter
+//    case bottomLeft
+//    case bottomRight
+//
+//    fileprivate func centerPoint(forToast toast: UIView, inSuperView toastSuperView: UIView) -> CGPoint
+//    {
+//      let toastStyle = ToastStyle()
+//      let topPadding: CGFloat = toastStyle.verticalPadding + toastSuperView.safeAreaInsets.top
+//      let bottomPadding: CGFloat = toastStyle.verticalPadding + toastSuperView.safeAreaInsets.bottom + 30.0
+//      let leftPadding: CGFloat = toastStyle.horizontalPadding + toastSuperView.safeAreaInsets.left
+//      let rightPadding: CGFloat = toastStyle.horizontalPadding + toastSuperView.safeAreaInsets.right
+//
+//      switch self {
+//        case .top:
+//          return CGPoint(x: toastSuperView.bounds.size.width / 2.0, y: (toast.frame.size.height / 2.0) + topPadding)
+//        case .bottomLeft:
+//          return CGPoint(x: (toast.frame.size.width / 2.0) + leftPadding, y: (toastSuperView.bounds.size.height - (toast.frame.size.height / 2.0)) - bottomPadding)
+//        case .bottomCenter:
+//          return CGPoint(x: toastSuperView.bounds.size.width / 2.0, y: (toastSuperView.bounds.size.height - (toast.frame.size.height / 2.0)) - bottomPadding)
+//        case .bottomRight:
+//          return CGPoint(x: (toastSuperView.bounds.size.width - (toast.frame.size.width / 2.0)) - rightPadding, y: (toastSuperView.bounds.size.height - (toast.frame.size.height / 2.0)) - bottomPadding)
+//      }
+//    }
+//  }
+//
+//  private var activeToasts: NSMutableArray {
+//    get {
+//      if let activeToasts = objc_getAssociatedObject(self, &ToastKeys.activeToasts) as? NSMutableArray {
+//        return activeToasts
+//      } else {
+//        let activeToasts = NSMutableArray()
+//        objc_setAssociatedObject(self, &ToastKeys.activeToasts, activeToasts, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+//        return activeToasts
+//      }
+//    }
+//  }
+//
+//  private var toastQueue: NSMutableArray {
+//    if let queue = objc_getAssociatedObject(self, &ToastKeys.queue) as? NSMutableArray {
+//      return queue
+//    } else {
+//      let queue = NSMutableArray()
+//      objc_setAssociatedObject(self, &ToastKeys.queue, queue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+//      return queue
+//    }
+//  }
+//
+//  var currentToastViewIndex: Int? {
+//    get {
+//      if let toastView = activeToasts.firstObject as? UIView {
+//        return self.subviews.firstIndex(of: toastView)
+//      } else { return nil }
+//    }
+//  }
+//
+////  // MARK: - Make toast alert to show at a given toast position on the View
+////  func createToast(toShowWithMessage message: String?, atPosition position: ToastPosition, title: String?, showLoadingIndicator: Bool = false, image: UIImage?, duration: TimeInterval, completions: () -> Void)
+////  {
+////    let toast = createToast(withMessage: message, title: title, image: image)
+////    showToast(atPosition: position, toast: toast, duration: duration, completion: completions)
+////  }
+////
+////  // MARK: - Make toast alert to show at a given point on the View
+////  func createToast(toShowWithMessage message: String?, atPoint point: CGPoint, title: String?, showLoadingIndicator: Bool = false, image: UIImage?, duration: TimeInterval, completions: () -> Void)
+////  {
+////    let toast = createToast(withMessage: message, title: title, image: image)
+////    showToast(atPoint: point, toast: toast, duration: duration, completion: completions)
+////  }
+////
+////  // MARK: - Create the toast view to display
+////  func createToast(withMessage message: String?, title: String?, image: UIImage?) -> ToastView
+////  {
+////    let toastStyle = ToastStyle()
+////    let toastWrapper = ToastView(withMessage: message, title: title, image: image, style: toastStyle, parentViewBounds: self.bounds)
+////
+////    objc_setAssociatedObject(self, &ToastKeys.currentToastTag, toastWrapper.restorationIdentifier, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+////
+////    return toastWrapper
+////  }
+////
+////  // MARK: - Show the toast at position within the View
+////  func showToast(atPosition position: ToastPosition, toast: ToastView, duration: TimeInterval, completion: () -> Void)
+////  {
+////    let point = position.centerPoint(forToast: toast, inSuperView: self)
+////    showToast(atPoint: point, toast: toast, duration: duration, completion: completion)
+////  }
+////
+////  // MARK: - Show the toast at point within the View with a completion handler
+////  func showToast(atPoint point: CGPoint, toast: ToastView, duration: TimeInterval, completion: () -> Void)
+////  {
+////    if activeToasts.count > 0 {
+////      toastQueue.add(toast)
+////      for case let toastView as ToastView in activeToasts {
+////        shiftToastUp(toastView, height: toast.frame.size.height)
+////      }
+////      showToast(toast, point: point, duration: duration)
+////    } else {
+////      showToast(toast, point: point, duration: duration)
+////    }
+////  }
+////
+////  // MARK: - Private show/hide toast methods
+////  private func showToast(_ toast: ToastView, point: CGPoint, duration: TimeInterval)
+////  {
+////    toast.center = point
+////    toast.alpha = 0.0
+////
+////    let recognizer = UITapGestureRecognizer(target: self, action: #selector(UIView.handleToastTapped(_:)))
+////    toast.addGestureRecognizer(recognizer)
+////    toast.isUserInteractionEnabled = true
+////    toast.isExclusiveTouch = true
+////
+////    activeToasts.add(toast)
+////    self.addSubview(toast)
+////
+////    UIView.animate(withDuration: 0.2, delay: 0.0, options: [.curveEaseOut, .allowUserInteraction], animations: {
+////      toast.alpha = 1.0
+////    }) { _ in
+////      let timer = Timer(timeInterval: duration, target: self, selector: #selector(UIView.toastTimerDidFinish(_:)), userInfo: toast, repeats: false)
+////      RunLoop.main.add(timer, forMode: .common)
+////    }
+////  }
+////
+////  func shiftToastUp(_ toast: ToastView, height: CGFloat)
+////  {
+////    let toastStyle = ToastStyle()
+////    let newYPosition = toast.frame.origin.y - (height + toastStyle.verticalPadding)
+////    let topPadding = toastStyle.verticalPadding + self.safeAreaInsets.top
+////    if newYPosition < topPadding {
+////      hideToast(toast)
+////    } else {
+////      toast.frame = CGRect(x: toast.frame.origin.x, y: newYPosition, width: toast.frame.size.width, height: toast.frame.size.height)
+////    }
+////  }
+////
+////  func shiftToastDown(_ toast: ToastView, height: CGFloat)
+////  {
+////    let toastStyle = ToastStyle()
+////    toast.frame = CGRect(x: toast.frame.origin.x, y: toast.frame.origin.y + (height + toastStyle.verticalPadding), width: toast.frame.size.width, height: toast.frame.size.height)
+////  }
+////
+////  func hideToast()
+////  {
+////    guard let activeToast = activeToasts.firstObject as? UIView else { return }
+////    hideToast(activeToast)
+////  }
+////
+////  func hideToast(_ toast: UIView)
+////  {
+////    guard activeToasts.contains(toast) else { return }
+////    hideToast(toast, fromTap: false)
+////  }
+////
+////  func hideToast(_ toast: UIView, fromTap: Bool)
+////  {
+////    //    if let timer = objc_getAssociatedObject(toast, &ToastKeys.timer) as? Timer {
+////    //      timer.invalidate
+////    //    }
+////
+////    let toastIndex = activeToasts.index(of: toast)
+////    guard toastIndex > -1  else { return }
+////    let toastStyle = ToastStyle()
+////
+////    for case let selectedToast as ToastView in activeToasts {
+////      let selectedToastIndex = activeToasts.index(of: selectedToast)
+////      if selectedToastIndex > -1, toastIndex > selectedToastIndex {
+////        shiftToastDown(selectedToast, height: selectedToast.frame.size.height)
+////      }
+////    }
+////
+////    UIView.animate(withDuration: toastStyle.fadeDuration, delay: 0.0, options: [.curveEaseIn, .beginFromCurrentState], animations: {
+////      toast.alpha = 0.0
+////    }) { _ in
+////      toast.removeFromSuperview()
+////      self.activeToasts.remove(toast)
+////    }
+////  }
+////
+////  func hideAllToast(clearQueue: Bool = true)
+////  {
+////    if clearQueue {
+////      clearToastQueue()
+////    }
+////
+////    activeToasts.compactMap { $0 as? UIView }.forEach { hideToast($0) }
+////  }
+////
+////  func clearToastQueue()
+////  {
+////    toastQueue.removeAllObjects()
+////  }
+////
+////  @objc
+////  private func handleToastTapped(_ recognizer: UITapGestureRecognizer)
+////  {
+////    guard let toast = recognizer.view as? ToastView else { return }
+////    hideToast(toast, fromTap: true)
+////  }
+////
+////  @objc
+////  private func toastTimerDidFinish(_ timer: Timer)
+////  {
+////    guard let toast = timer.userInfo as? UIView else { return }
+////    hideToast(toast)
+////    print("timer finished")
+////  }
+}

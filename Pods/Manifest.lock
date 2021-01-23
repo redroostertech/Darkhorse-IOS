@@ -1,0 +1,88 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ASHorizontalScrollView (1.5.2)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - DateToolsSwift (5.0.0)
+  - EachNavigationBar (1.14.4)
+  - ESTabBarController-swift (2.8.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - NightNight (0.5.0)
+  - ObjectMapper (3.5.3)
+  - Parchment (3.0.1)
+  - pop (1.0.12)
+  - ProgressHUD (2.70)
+  - SideMenu (6.5.0)
+  - SwiftDate (5.1.0)
+  - SwipeCellKit (2.5.4)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - ASHorizontalScrollView (~> 1.5.2)
+  - ChameleonFramework/Swift (from `https://github.com/redroostertech/Chameleon.git`, branch `master`)
+  - DateToolsSwift
+  - EachNavigationBar (from `https://github.com/redroostertech/EachNavigationBar.git`, branch `iMessage_Port`)
+  - ESTabBarController-swift
+  - IQKeyboardManagerSwift
+  - NightNight
+  - ObjectMapper (~> 3.1)
+  - Parchment
+  - pop
+  - ProgressHUD
+  - SideMenu
+  - SwiftDate (~> 5.0)
+  - SwipeCellKit (= 2.5.4)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ASHorizontalScrollView
+    - DateToolsSwift
+    - ESTabBarController-swift
+    - IQKeyboardManagerSwift
+    - NightNight
+    - ObjectMapper
+    - Parchment
+    - pop
+    - ProgressHUD
+    - SideMenu
+    - SwiftDate
+    - SwipeCellKit
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: master
+    :git: https://github.com/redroostertech/Chameleon.git
+  EachNavigationBar:
+    :branch: iMessage_Port
+    :git: https://github.com/redroostertech/EachNavigationBar.git
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 56f36fbc69ad6389243f556a1faed4581f4e1df6
+    :git: https://github.com/redroostertech/Chameleon.git
+  EachNavigationBar:
+    :commit: 411d37bd050cbbc75cfc2f1bb9ddfeea69dd2f2d
+    :git: https://github.com/redroostertech/EachNavigationBar.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ASHorizontalScrollView: b84b60fa1ce2088d569e5faa8379846c143c824d
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
+  EachNavigationBar: 9000bc381312c65a86ab1f6c31b526ea675411f6
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  NightNight: 2a5550fdd9cf424b75ebaab022c26aaba35304c8
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Parchment: 466a1cfb6151780db8acb4bbedc2d9c6bfa1e2ff
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  ProgressHUD: e603e8b8622c47d8818b9fb38b3cfe9d3e7ca421
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SwiftDate: 6329e58969a2de31cea7f1ee1143b247693196e7
+  SwipeCellKit: 4eada3884ab1bbae5e8d2fb9030c242aa23d7f42
+
+PODFILE CHECKSUM: 66c05faba0a87be96e0d4effb2d4f0d25d6550cd
+
+COCOAPODS: 1.10.1

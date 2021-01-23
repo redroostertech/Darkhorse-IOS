@@ -18,6 +18,5 @@ class BasicSettingsCell: UITableViewCell {
   {
     settingsTitleLabel.text = title
     settingsDescriptionLabel.text = description
-    self.settingsControlDelegate = settingsControlDelegate
   }
 }

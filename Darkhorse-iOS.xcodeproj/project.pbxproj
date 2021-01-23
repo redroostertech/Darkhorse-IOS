@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72B74F36E62DEA920FC26AB8 /* Pods_Darkhorse_iOS_Darkhorse_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F906B4A0B04E87DC06B01FD4 /* Pods_Darkhorse_iOS_Darkhorse_iOSUITests.framework */; };
+		A9710D556EC86CB8CCCB074E /* Pods_Darkhorse_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B17DCBE3151A127A343A017 /* Pods_Darkhorse_iOS.framework */; };
 		D726D22A25BB6CAC00A147F3 /* QuickActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D22825BB6CAC00A147F3 /* QuickActionView.swift */; };
 		D726D22B25BB6CAC00A147F3 /* QuickActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D22925BB6CAC00A147F3 /* QuickActionView.xib */; };
 		D726D22E25BB76DA00A147F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D22D25BB76DA00A147F3 /* HomeViewController.swift */; };
@@ -23,6 +25,12 @@
 		D726D24725BC53FF00A147F3 /* BasicSettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D24525BC53FF00A147F3 /* BasicSettingsCell.xib */; };
 		D726D24B25BC54F800A147F3 /* StorageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D24925BC54F800A147F3 /* StorageCell.swift */; };
 		D726D24C25BC54F800A147F3 /* StorageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D24A25BC54F800A147F3 /* StorageCell.xib */; };
+		D726D25025BC58F300A147F3 /* PodcastEpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D24E25BC58F300A147F3 /* PodcastEpisodeCell.swift */; };
+		D726D25125BC58F300A147F3 /* PodcastEpisodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D24F25BC58F300A147F3 /* PodcastEpisodeCell.xib */; };
+		D726D25525BC59B600A147F3 /* EpisodeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D25325BC59B600A147F3 /* EpisodeHeaderCell.swift */; };
+		D726D25625BC59B600A147F3 /* EpisodeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D25425BC59B600A147F3 /* EpisodeHeaderCell.xib */; };
+		D726D25925BC5B6200A147F3 /* ShowPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D25825BC5B6200A147F3 /* ShowPageViewController.swift */; };
+		D726D25B25BC8B7100A147F3 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D25A25BC8B7100A147F3 /* UITableViewCell+Extensions.swift */; };
 		D79B346825B732FA00F2BE8A /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346725B732FA00F2BE8A /* Dictionary+Extensions.swift */; };
 		D79B346A25B7330900F2BE8A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346925B7330900F2BE8A /* String+Extension.swift */; };
 		D79B346C25B7341900F2BE8A /* UIColors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346B25B7341900F2BE8A /* UIColors+Extensions.swift */; };
@@ -75,6 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47A8440F2D886DF4626E9B38 /* Pods-Darkhorse-iOS-Darkhorse-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darkhorse-iOS-Darkhorse-iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Darkhorse-iOS-Darkhorse-iOSUITests/Pods-Darkhorse-iOS-Darkhorse-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C0F1A07CE1D9B22F444B5C7 /* Pods-Darkhorse-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darkhorse-iOS.release.xcconfig"; path = "Target Support Files/Pods-Darkhorse-iOS/Pods-Darkhorse-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		8B17DCBE3151A127A343A017 /* Pods_Darkhorse_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darkhorse_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		906E812860F6C59CA578BFE4 /* Pods-Darkhorse-iOS-Darkhorse-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darkhorse-iOS-Darkhorse-iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Darkhorse-iOS-Darkhorse-iOSUITests/Pods-Darkhorse-iOS-Darkhorse-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D726D22825BB6CAC00A147F3 /* QuickActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionView.swift; sourceTree = "<group>"; };
 		D726D22925BB6CAC00A147F3 /* QuickActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickActionView.xib; sourceTree = "<group>"; };
 		D726D22D25BB76DA00A147F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +103,12 @@
 		D726D24525BC53FF00A147F3 /* BasicSettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicSettingsCell.xib; sourceTree = "<group>"; };
 		D726D24925BC54F800A147F3 /* StorageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCell.swift; sourceTree = "<group>"; };
 		D726D24A25BC54F800A147F3 /* StorageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageCell.xib; sourceTree = "<group>"; };
+		D726D24E25BC58F300A147F3 /* PodcastEpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastEpisodeCell.swift; sourceTree = "<group>"; };
+		D726D24F25BC58F300A147F3 /* PodcastEpisodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastEpisodeCell.xib; sourceTree = "<group>"; };
+		D726D25325BC59B600A147F3 /* EpisodeHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeHeaderCell.swift; sourceTree = "<group>"; };
+		D726D25425BC59B600A147F3 /* EpisodeHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeHeaderCell.xib; sourceTree = "<group>"; };
+		D726D25825BC5B6200A147F3 /* ShowPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPageViewController.swift; sourceTree = "<group>"; };
+		D726D25A25BC8B7100A147F3 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		D79B346725B732FA00F2BE8A /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		D79B346925B7330900F2BE8A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D79B346B25B7341900F2BE8A /* UIColors+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+Extensions.swift"; sourceTree = "<group>"; };
@@ -134,6 +152,8 @@
 		D7C76FE525B66BA500DC5CAC /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		D7C76FE625B66BA500DC5CAC /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		D7C76FE725B66BA500DC5CAC /* UISegmentedControl+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Extensions.swift"; sourceTree = "<group>"; };
+		E9FC83516C40B274F15EADE1 /* Pods-Darkhorse-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Darkhorse-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Darkhorse-iOS/Pods-Darkhorse-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F906B4A0B04E87DC06B01FD4 /* Pods_Darkhorse_iOS_Darkhorse_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Darkhorse_iOS_Darkhorse_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9710D556EC86CB8CCCB074E /* Pods_Darkhorse_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,12 +169,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B74F36E62DEA920FC26AB8 /* Pods_Darkhorse_iOS_Darkhorse_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C1B15F01A123C148C5CC18F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B17DCBE3151A127A343A017 /* Pods_Darkhorse_iOS.framework */,
+				F906B4A0B04E87DC06B01FD4 /* Pods_Darkhorse_iOS_Darkhorse_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50F15D2AD2F03E57DA74DA91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9FC83516C40B274F15EADE1 /* Pods-Darkhorse-iOS.debug.xcconfig */,
+				7C0F1A07CE1D9B22F444B5C7 /* Pods-Darkhorse-iOS.release.xcconfig */,
+				906E812860F6C59CA578BFE4 /* Pods-Darkhorse-iOS-Darkhorse-iOSUITests.debug.xcconfig */,
+				47A8440F2D886DF4626E9B38 /* Pods-Darkhorse-iOS-Darkhorse-iOSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D726D22725BB6C7300A147F3 /* QuickActionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +213,7 @@
 				D726D22F25BB7CC800A147F3 /* PopularViewController.swift */,
 				D726D23125BB7CE100A147F3 /* LibraryViewController.swift */,
 				D726D23325BB7CF800A147F3 /* SettingsViewController.swift */,
+				D726D25825BC5B6200A147F3 /* ShowPageViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -220,6 +263,24 @@
 			path = StorageCell;
 			sourceTree = "<group>";
 		};
+		D726D25225BC58FB00A147F3 /* PodcastEpisodeCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D24E25BC58F300A147F3 /* PodcastEpisodeCell.swift */,
+				D726D24F25BC58F300A147F3 /* PodcastEpisodeCell.xib */,
+			);
+			path = PodcastEpisodeCell;
+			sourceTree = "<group>";
+		};
+		D726D25725BC59BC00A147F3 /* EpisodeHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				D726D25325BC59B600A147F3 /* EpisodeHeaderCell.swift */,
+				D726D25425BC59B600A147F3 /* EpisodeHeaderCell.xib */,
+			);
+			path = EpisodeHeaderCell;
+			sourceTree = "<group>";
+		};
 		D79B347125B7378400F2BE8A /* PodcastCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +323,8 @@
 				D7C76F7825B6624F00DC5CAC /* Darkhorse-iOS */,
 				D7C76F9225B6625000DC5CAC /* Darkhorse-iOSUITests */,
 				D7C76F7725B6624F00DC5CAC /* Products */,
+				50F15D2AD2F03E57DA74DA91 /* Pods */,
+				3C1B15F01A123C148C5CC18F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,6 +412,8 @@
 				D726D24825BC540400A147F3 /* BasicSettingsCell */,
 				D726D24325BC53E500A147F3 /* SettingsCell */,
 				D726D24D25BC54FE00A147F3 /* StorageCell */,
+				D726D25225BC58FB00A147F3 /* PodcastEpisodeCell */,
+				D726D25725BC59BC00A147F3 /* EpisodeHeaderCell */,
 			);
 			path = UITableViewCells;
 			sourceTree = "<group>";
@@ -380,6 +445,7 @@
 				D79B346D25B7343400F2BE8A /* UITextView+Extensions.swift */,
 				D79B346F25B7343B00F2BE8A /* UIView+Extensions.swift */,
 				D7C76FE625B66BA500DC5CAC /* UIViewController+Extensions.swift */,
+				D726D25A25BC8B7100A147F3 /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -410,9 +476,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7C76F9825B6625000DC5CAC /* Build configuration list for PBXNativeTarget "Darkhorse-iOS" */;
 			buildPhases = (
+				922133F6481CD5D16C021A91 /* [CP] Check Pods Manifest.lock */,
 				D7C76F7225B6624F00DC5CAC /* Sources */,
 				D7C76F7325B6624F00DC5CAC /* Frameworks */,
 				D7C76F7425B6624F00DC5CAC /* Resources */,
+				6FCC6F5C79A696EFA89761F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,9 +495,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7C76F9B25B6625000DC5CAC /* Build configuration list for PBXNativeTarget "Darkhorse-iOSUITests" */;
 			buildPhases = (
+				F94970F1EB9D2ADA859FAFC1 /* [CP] Check Pods Manifest.lock */,
 				D7C76F8B25B6625000DC5CAC /* Sources */,
 				D7C76F8C25B6625000DC5CAC /* Frameworks */,
 				D7C76F8D25B6625000DC5CAC /* Resources */,
+				4C9E05DB52C5577A2D643669 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,12 +562,14 @@
 				D79B348425B73E3200F2BE8A /* PodcastCollectionCell.xib in Resources */,
 				D7C76F8925B6625000DC5CAC /* LaunchScreen.storyboard in Resources */,
 				D7C76F8625B6625000DC5CAC /* Assets.xcassets in Resources */,
+				D726D25625BC59B600A147F3 /* EpisodeHeaderCell.xib in Resources */,
 				D726D24725BC53FF00A147F3 /* BasicSettingsCell.xib in Resources */,
 				D79B347A25B73B9000F2BE8A /* BaseSectionHeader.xib in Resources */,
 				D726D22B25BB6CAC00A147F3 /* QuickActionView.xib in Resources */,
 				D7C76F8125B6624F00DC5CAC /* Main.storyboard in Resources */,
 				D726D24225BC520200A147F3 /* SettingsCell.xib in Resources */,
 				D726D23825BB7D7A00A147F3 /* HeaderCell.xib in Resources */,
+				D726D25125BC58F300A147F3 /* PodcastEpisodeCell.xib in Resources */,
 				D726D23D25BC4EF200A147F3 /* PodcastActivityCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +583,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C9E05DB52C5577A2D643669 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Darkhorse-iOS-Darkhorse-iOSUITests/Pods-Darkhorse-iOS-Darkhorse-iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Darkhorse-iOS-Darkhorse-iOSUITests/Pods-Darkhorse-iOS-Darkhorse-iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Darkhorse-iOS-Darkhorse-iOSUITests/Pods-Darkhorse-iOS-Darkhorse-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCC6F5C79A696EFA89761F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Darkhorse-iOS/Pods-Darkhorse-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Darkhorse-iOS/Pods-Darkhorse-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Darkhorse-iOS/Pods-Darkhorse-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		922133F6481CD5D16C021A91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Darkhorse-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F94970F1EB9D2ADA859FAFC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Darkhorse-iOS-Darkhorse-iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7C76F7225B6624F00DC5CAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -520,6 +673,7 @@
 				D726D23225BB7CE100A147F3 /* LibraryViewController.swift in Sources */,
 				D7C76FE925B66BA500DC5CAC /* UIImage+Extensions.swift in Sources */,
 				D726D22E25BB76DA00A147F3 /* HomeViewController.swift in Sources */,
+				D726D25525BC59B600A147F3 /* EpisodeHeaderCell.swift in Sources */,
 				D726D24125BC520200A147F3 /* SettingsCell.swift in Sources */,
 				D79B347025B7343B00F2BE8A /* UIView+Extensions.swift in Sources */,
 				D7C76FB725B66A9A00DC5CAC /* SearchCell.swift in Sources */,
@@ -531,6 +685,7 @@
 				D7C76FF325B66BA500DC5CAC /* UISegmentedControl+Extensions.swift in Sources */,
 				D7C76FA525B6632400DC5CAC /* WelcomeCell.swift in Sources */,
 				D726D24B25BC54F800A147F3 /* StorageCell.swift in Sources */,
+				D726D25925BC5B6200A147F3 /* ShowPageViewController.swift in Sources */,
 				D726D22A25BB6CAC00A147F3 /* QuickActionView.swift in Sources */,
 				D79B346E25B7343400F2BE8A /* UITextView+Extensions.swift in Sources */,
 				D79B346C25B7341900F2BE8A /* UIColors+Extensions.swift in Sources */,
@@ -542,6 +697,8 @@
 				D7C76FED25B66BA500DC5CAC /* UITextField+Extensions.swift in Sources */,
 				D79B346A25B7330900F2BE8A /* String+Extension.swift in Sources */,
 				D7C76FF225B66BA500DC5CAC /* UIViewController+Extensions.swift in Sources */,
+				D726D25025BC58F300A147F3 /* PodcastEpisodeCell.swift in Sources */,
+				D726D25B25BC8B7100A147F3 /* UITableViewCell+Extensions.swift in Sources */,
 				D7C76FB325B6672E00DC5CAC /* Configuration.swift in Sources */,
 				D7C76FEB25B66BA500DC5CAC /* Optional+Extensions.swift in Sources */,
 				D7C76FEC25B66BA500DC5CAC /* UIAlertController+Extension.swift in Sources */,
@@ -712,6 +869,7 @@
 		};
 		D7C76F9925B6625000DC5CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FC83516C40B274F15EADE1 /* Pods-Darkhorse-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -730,6 +888,7 @@
 		};
 		D7C76F9A25B6625000DC5CAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C0F1A07CE1D9B22F444B5C7 /* Pods-Darkhorse-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -748,6 +907,7 @@
 		};
 		D7C76F9C25B6625000DC5CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 906E812860F6C59CA578BFE4 /* Pods-Darkhorse-iOS-Darkhorse-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -768,6 +928,7 @@
 		};
 		D7C76F9D25B6625000DC5CAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A8440F2D886DF4626E9B38 /* Pods-Darkhorse-iOS-Darkhorse-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

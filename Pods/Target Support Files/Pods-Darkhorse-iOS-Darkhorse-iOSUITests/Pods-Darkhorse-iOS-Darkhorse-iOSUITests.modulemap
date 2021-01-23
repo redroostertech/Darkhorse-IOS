@@ -1,0 +1,6 @@
+framework module Pods_Darkhorse_iOS_Darkhorse_iOSUITests {
+  umbrella header "Pods-Darkhorse-iOS-Darkhorse-iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

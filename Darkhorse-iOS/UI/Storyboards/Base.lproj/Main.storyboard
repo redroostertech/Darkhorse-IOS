@@ -179,23 +179,38 @@
         <!--Item-->
         <scene sceneID="uai-kq-STK">
             <objects>
-                <viewController id="1qJ-r4-2s2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1qJ-r4-2s2" customClass="HomeViewController" customModule="Darkhorse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JEO-4j-nNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5rk-3n-9LP">
+                                <rect key="frame" x="0.0" y="86" width="414" height="767"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.060680277650000003" green="0.060234673320000001" blue="0.14701253180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5rk-3n-9LP" firstAttribute="leading" secondItem="FeP-T8-uOb" secondAttribute="leading" id="0n7-BQ-ByT"/>
+                            <constraint firstItem="5rk-3n-9LP" firstAttribute="top" secondItem="FeP-T8-uOb" secondAttribute="top" constant="42" id="M5v-1z-Zvp"/>
+                            <constraint firstItem="FeP-T8-uOb" firstAttribute="bottom" secondItem="5rk-3n-9LP" secondAttribute="bottom" constant="9" id="ReQ-Xy-foj"/>
+                            <constraint firstItem="5rk-3n-9LP" firstAttribute="trailing" secondItem="FeP-T8-uOb" secondAttribute="trailing" id="Wej-z0-nmL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FeP-T8-uOb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="AEE-AJ-wqT"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="5rk-3n-9LP" id="IRj-bO-WvH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOs-wP-kpV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923" y="812"/>
+            <point key="canvasLocation" x="921.73913043478262" y="811.60714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Page View Controller-->
         <scene sceneID="uMg-m2-zYH">
             <objects>
-                <viewController id="2qO-Wl-rfb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2qO-Wl-rfb" customClass="ShowPageViewController" customModule="Darkhorse_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lvh-eZ-JaJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,12 +228,10 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="x5r-Aa-PMN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zGM-dh-UEq">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="1qJ-r4-2s2" kind="relationship" relationship="viewControllers" id="9Ip-fw-T9j"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zf7-Vm-gnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,14 +244,29 @@
                     <view key="view" contentMode="scaleToFill" id="IO1-wk-p2R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RkM-B4-O9H">
+                                <rect key="frame" x="0.0" y="86" width="414" height="776"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.060680277650000003" green="0.060234673320000001" blue="0.14701253180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RkM-B4-O9H" firstAttribute="leading" secondItem="7qq-bx-o5z" secondAttribute="leading" id="5VC-Fp-aeW"/>
+                            <constraint firstItem="7qq-bx-o5z" firstAttribute="bottom" secondItem="RkM-B4-O9H" secondAttribute="bottom" id="IvM-e7-BKl"/>
+                            <constraint firstItem="RkM-B4-O9H" firstAttribute="trailing" secondItem="7qq-bx-o5z" secondAttribute="trailing" id="LSh-rx-3bC"/>
+                            <constraint firstItem="RkM-B4-O9H" firstAttribute="top" secondItem="7qq-bx-o5z" secondAttribute="top" constant="42" id="bcP-XD-sLH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7qq-bx-o5z"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="12k-fe-seF"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="RkM-B4-O9H" id="vye-5D-VKM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUJ-Wb-1SI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609" y="812"/>
+            <point key="canvasLocation" x="1608.6956521739132" y="811.60714285714278"/>
         </scene>
         <!--Item-->
         <scene sceneID="2Ra-Zn-FYZ">
@@ -247,14 +275,29 @@
                     <view key="view" contentMode="scaleToFill" id="ebm-f3-8Vs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zMF-jw-A8E">
+                                <rect key="frame" x="0.0" y="86" width="414" height="776"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.060680277650000003" green="0.060234673320000001" blue="0.14701253180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eCU-hD-hE0" firstAttribute="bottom" secondItem="zMF-jw-A8E" secondAttribute="bottom" id="3Eq-FM-1YK"/>
+                            <constraint firstItem="zMF-jw-A8E" firstAttribute="leading" secondItem="eCU-hD-hE0" secondAttribute="leading" id="EMC-k9-S1f"/>
+                            <constraint firstItem="zMF-jw-A8E" firstAttribute="top" secondItem="eCU-hD-hE0" secondAttribute="top" constant="42" id="YLc-R9-sMY"/>
+                            <constraint firstItem="zMF-jw-A8E" firstAttribute="trailing" secondItem="eCU-hD-hE0" secondAttribute="trailing" id="m61-Pf-4kO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eCU-hD-hE0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="ksG-43-ssK"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="zMF-jw-A8E" id="Mkm-IX-qjX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyg-F0-wEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="812"/>
+            <point key="canvasLocation" x="2269.5652173913045" y="811.60714285714278"/>
         </scene>
         <!--Item-->
         <scene sceneID="aHp-Xh-lgD">
