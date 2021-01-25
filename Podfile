@@ -22,6 +22,8 @@ target 'Darkhorse-iOS' do
   pod 'SwipeCellKit', '2.5.4'
   pod 'EachNavigationBar', :git => 'https://github.com/redroostertech/EachNavigationBar.git', :branch => 'iMessage_Port'
   pod 'ASHorizontalScrollView', '~> 1.5.2'
+  pod 'DrawerView'
+  pod 'ConcentricProgressRingView'
   
   target 'Darkhorse-iOSUITests' do
     # Pods for testing

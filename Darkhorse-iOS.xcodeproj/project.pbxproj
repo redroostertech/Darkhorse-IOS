@@ -31,6 +31,11 @@
 		D726D25625BC59B600A147F3 /* EpisodeHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D25425BC59B600A147F3 /* EpisodeHeaderCell.xib */; };
 		D726D25925BC5B6200A147F3 /* ShowPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D25825BC5B6200A147F3 /* ShowPageViewController.swift */; };
 		D726D25B25BC8B7100A147F3 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D25A25BC8B7100A147F3 /* UITableViewCell+Extensions.swift */; };
+		D726D26525BF175F00A147F3 /* TagCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D726D26325BF175F00A147F3 /* TagCellView.swift */; };
+		D726D26625BF175F00A147F3 /* TagCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D726D26425BF175F00A147F3 /* TagCellView.xib */; };
+		D78C147025BF1EDE007B8C62 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78C146F25BF1EDE007B8C62 /* RecordViewController.swift */; };
+		D78C147225BF1F05007B8C62 /* RecordDrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78C147125BF1F05007B8C62 /* RecordDrawerViewController.swift */; };
+		D78C147525BF1F98007B8C62 /* PodcastAudioActionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78C147425BF1F98007B8C62 /* PodcastAudioActionDelegate.swift */; };
 		D79B346825B732FA00F2BE8A /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346725B732FA00F2BE8A /* Dictionary+Extensions.swift */; };
 		D79B346A25B7330900F2BE8A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346925B7330900F2BE8A /* String+Extension.swift */; };
 		D79B346C25B7341900F2BE8A /* UIColors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B346B25B7341900F2BE8A /* UIColors+Extensions.swift */; };
@@ -109,6 +114,11 @@
 		D726D25425BC59B600A147F3 /* EpisodeHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeHeaderCell.xib; sourceTree = "<group>"; };
 		D726D25825BC5B6200A147F3 /* ShowPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPageViewController.swift; sourceTree = "<group>"; };
 		D726D25A25BC8B7100A147F3 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		D726D26325BF175F00A147F3 /* TagCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagCellView.swift; sourceTree = "<group>"; };
+		D726D26425BF175F00A147F3 /* TagCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagCellView.xib; sourceTree = "<group>"; };
+		D78C146F25BF1EDE007B8C62 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		D78C147125BF1F05007B8C62 /* RecordDrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDrawerViewController.swift; sourceTree = "<group>"; };
+		D78C147425BF1F98007B8C62 /* PodcastAudioActionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAudioActionDelegate.swift; sourceTree = "<group>"; };
 		D79B346725B732FA00F2BE8A /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
 		D79B346925B7330900F2BE8A /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D79B346B25B7341900F2BE8A /* UIColors+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+Extensions.swift"; sourceTree = "<group>"; };
@@ -214,6 +224,8 @@
 				D726D23125BB7CE100A147F3 /* LibraryViewController.swift */,
 				D726D23325BB7CF800A147F3 /* SettingsViewController.swift */,
 				D726D25825BC5B6200A147F3 /* ShowPageViewController.swift */,
+				D78C146F25BF1EDE007B8C62 /* RecordViewController.swift */,
+				D78C147125BF1F05007B8C62 /* RecordDrawerViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -279,6 +291,23 @@
 				D726D25425BC59B600A147F3 /* EpisodeHeaderCell.xib */,
 			);
 			path = EpisodeHeaderCell;
+			sourceTree = "<group>";
+		};
+		D726D26025BF16CF00A147F3 /* TagCellView */ = {
+			isa = PBXGroup;
+			children = (
+				D726D26325BF175F00A147F3 /* TagCellView.swift */,
+				D726D26425BF175F00A147F3 /* TagCellView.xib */,
+			);
+			path = TagCellView;
+			sourceTree = "<group>";
+		};
+		D78C147325BF1F8B007B8C62 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D78C147425BF1F98007B8C62 /* PodcastAudioActionDelegate.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		D79B347125B7378400F2BE8A /* PodcastCell */ = {
@@ -365,6 +394,7 @@
 		D7C76F9E25B6625A00DC5CAC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D78C147325BF1F8B007B8C62 /* Interfaces */,
 				D7C76FA125B6628A00DC5CAC /* Views */,
 				D7C76F9F25B6627A00DC5CAC /* Storyboards */,
 				D7C76FA025B6628200DC5CAC /* Assets */,
@@ -402,6 +432,7 @@
 		D7C76FA225B6630700DC5CAC /* UITableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				D726D26025BF16CF00A147F3 /* TagCellView */,
 				D79B347625B73B3200F2BE8A /* BaseSectionHeader */,
 				D79B347125B7378400F2BE8A /* PodcastCell */,
 				D7C76FB425B66A8200DC5CAC /* SearchCell */,
@@ -555,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C76FB825B66A9A00DC5CAC /* SearchCell.xib in Resources */,
+				D726D26625BF175F00A147F3 /* TagCellView.xib in Resources */,
 				D7C76FA625B6632400DC5CAC /* WelcomeCell.xib in Resources */,
 				D79B347525B7379600F2BE8A /* PodcastCell.xib in Resources */,
 				D79B347E25B73DCD00F2BE8A /* PodcastCollectionViewCell.xib in Resources */,
@@ -675,12 +707,14 @@
 				D726D22E25BB76DA00A147F3 /* HomeViewController.swift in Sources */,
 				D726D25525BC59B600A147F3 /* EpisodeHeaderCell.swift in Sources */,
 				D726D24125BC520200A147F3 /* SettingsCell.swift in Sources */,
+				D78C147525BF1F98007B8C62 /* PodcastAudioActionDelegate.swift in Sources */,
 				D79B347025B7343B00F2BE8A /* UIView+Extensions.swift in Sources */,
 				D7C76FB725B66A9A00DC5CAC /* SearchCell.swift in Sources */,
 				D726D23725BB7D7A00A147F3 /* HeaderCell.swift in Sources */,
 				D726D23C25BC4EF200A147F3 /* PodcastActivityCell.swift in Sources */,
 				D726D24625BC53FF00A147F3 /* BasicSettingsCell.swift in Sources */,
 				D7C76F7A25B6624F00DC5CAC /* AppDelegate.swift in Sources */,
+				D78C147025BF1EDE007B8C62 /* RecordViewController.swift in Sources */,
 				D7C76FF125B66BA500DC5CAC /* UIApplication+Extension.swift in Sources */,
 				D7C76FF325B66BA500DC5CAC /* UISegmentedControl+Extensions.swift in Sources */,
 				D7C76FA525B6632400DC5CAC /* WelcomeCell.swift in Sources */,
@@ -696,7 +730,9 @@
 				D79B348325B73E3200F2BE8A /* PodcastCollectionCell.swift in Sources */,
 				D7C76FED25B66BA500DC5CAC /* UITextField+Extensions.swift in Sources */,
 				D79B346A25B7330900F2BE8A /* String+Extension.swift in Sources */,
+				D726D26525BF175F00A147F3 /* TagCellView.swift in Sources */,
 				D7C76FF225B66BA500DC5CAC /* UIViewController+Extensions.swift in Sources */,
+				D78C147225BF1F05007B8C62 /* RecordDrawerViewController.swift in Sources */,
 				D726D25025BC58F300A147F3 /* PodcastEpisodeCell.swift in Sources */,
 				D726D25B25BC8B7100A147F3 /* UITableViewCell+Extensions.swift in Sources */,
 				D7C76FB325B6672E00DC5CAC /* Configuration.swift in Sources */,

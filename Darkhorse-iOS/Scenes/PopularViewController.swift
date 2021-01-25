@@ -70,6 +70,8 @@ class PopularViewController: UIViewController, UITableViewDelegate, UITableViewD
                            forCellReuseIdentifier: PodcastCollectionViewCell.identifier)
     mainTableView.register(SearchCell.nib,
                            forCellReuseIdentifier: SearchCell.identifier)
+    mainTableView.register(TagCellView.nib,
+                           forCellReuseIdentifier: TagCellView.identifier)
     //    mainTableView.register(BaseSectionHeader.loadNib(), forHeaderFooterViewReuseIdentifier: BaseSectionHeader.identifier)
   }
   

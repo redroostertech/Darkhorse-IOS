@@ -8,27 +8,6 @@
 
 import UIKit
 
-protocol PodcastAudioActionDelegate: class {
-  var currentPodcast: String? { get set }
-  var isPlaying: Bool { get set }
-  var progress: Double? { get set }
-  func play()
-  func pause()
-  func next()
-  func previous()
-  func comment()
-  func like()
-}
-
-extension PodcastAudioActionDelegate {
-  func play() { }
-  func pause() { }
-  func next() { }
-  func previous() { }
-  func comment() { }
-  func like() { }
-}
-
 class PodcastCell: UITableViewCell {
   
   @IBOutlet weak var mainContainer: UIView!

@@ -1,10 +1,13 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ASHorizontalScrollView.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ConcentricProgressRingView.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateToolsSwift.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DrawerView.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EachNavigationBar.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LionheartExtensions.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NightNight.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parchment.framework
