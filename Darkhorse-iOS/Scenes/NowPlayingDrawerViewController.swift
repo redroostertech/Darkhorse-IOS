@@ -1,5 +1,5 @@
 //
-//  RecordDrawerViewController.swift
+//  NowPlayingDrawerViewController.swift
 //  Darkhorse-iOS
 //
 //  Created by Michael Westbrooks on 1/25/21.
@@ -9,7 +9,8 @@
 import UIKit
 import ConcentricProgressRingView
 
-class RecordDrawerViewController: UIViewController {
+class NowPlayingDrawerViewController: UIViewController {
+
   @IBOutlet weak var miniBarView: UIView!
   @IBOutlet weak var beginningTitleLabel: UILabel!
   @IBOutlet weak var recordButton: UIButton!
@@ -21,11 +22,12 @@ class RecordDrawerViewController: UIViewController {
   @IBOutlet weak var buttonTwo: UIButton!
   @IBOutlet weak var buttonThree: UIButton!
   @IBOutlet weak var buttonFour: UIButton!
-
-  static func setupViewController() -> RecordDrawerViewController {
+  @IBOutlet weak var buttonFive: UIButton!
+  
+  static func setupViewController() -> NowPlayingDrawerViewController {
     let storyboard = UIStoryboard(name: kStoryboardMain,
                                   bundle: nil)
-    let viewController = storyboard.instantiateViewController(withIdentifier: RecordDrawerViewController.identifier) as! RecordDrawerViewController
+    let viewController = storyboard.instantiateViewController(withIdentifier: NowPlayingDrawerViewController.identifier) as! NowPlayingDrawerViewController
     return viewController
   }
   
@@ -51,5 +53,8 @@ class RecordDrawerViewController: UIViewController {
   }
   
   @IBAction func buttonFourAction(_ sender: UIButton) {
+  }
+
+  @IBAction func buttonFiveAction(_ sender: Any) {
   }
 }

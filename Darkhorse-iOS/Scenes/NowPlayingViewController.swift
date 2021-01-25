@@ -1,5 +1,5 @@
 //
-//  RecordViewController.swift
+//  NowPlayingViewController.swift
 //  Darkhorse-iOS
 //
 //  Created by Michael Westbrooks on 1/25/21.
@@ -11,11 +11,11 @@ import EachNavigationBar
 import Parchment
 import DrawerView
 
-class RecordViewController: UIViewController, DrawerViewDelegate {
+class NowPlayingViewController: UIViewController, DrawerViewDelegate {
   
   @IBOutlet weak var backgroundImageView: UIImageView!
   internal var drawerView: DrawerView?
-
+  
   private var navigationBar: EachNavigationBar?
   private var navBarHeight: CGFloat = kNavBarHeight
   private var navBar: EachNavigationBar {
@@ -38,7 +38,7 @@ class RecordViewController: UIViewController, DrawerViewDelegate {
   
   private var navItem: UINavigationItem {
     let navitem = UINavigationItem()
-    navitem.title = "Record"
+    navitem.title = "Now Playing"
     //    let menuButton = UIBarButtonItem(image: UIImage(named: kImageMenu)!.maskWithColor(color: .black),
     //                                     style: .plain,
     //                                     target: self,
@@ -70,8 +70,8 @@ class RecordViewController: UIViewController, DrawerViewDelegate {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     // Load Authentication Embed View for Drawer
-    let signinVC = RecordDrawerViewController.setupViewController() as! RecordDrawerViewController
-  
+    let signinVC = NowPlayingDrawerViewController.setupViewController() as! NowPlayingDrawerViewController
+    
     self.addChild(signinVC)
     
     // Load Drawer View
@@ -89,14 +89,14 @@ class RecordViewController: UIViewController, DrawerViewDelegate {
     
     drawerView = drawerview
   }
-
+  
   func openDrawer(_ sender: UIViewController) {
     drawerView?.setPosition(
       .open,
       animated: true
     )
   }
-
+  
   func drawer(_ drawerView: DrawerView, didTransitionTo position: DrawerPosition) {
     if position == .closed || position == .partiallyOpen {
       self.view.endEditing(true)

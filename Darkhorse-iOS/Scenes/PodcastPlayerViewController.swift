@@ -1,5 +1,5 @@
 //
-//  RecordViewController.swift
+//  PodcastPlayerViewController.swift
 //  Darkhorse-iOS
 //
 //  Created by Michael Westbrooks on 1/25/21.
@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import ConcentricProgressRingView
 import EachNavigationBar
 import Parchment
-import DrawerView
 
-class RecordViewController: UIViewController, DrawerViewDelegate {
+class PodcastPlayerViewController: UIViewController {
+
+  @IBOutlet weak var beginningTitleLabel: UILabel!
+  @IBOutlet weak var podcastImageView: UIImageView!
+  @IBOutlet weak var endingTitleLabel: UILabel!
+  @IBOutlet weak var podcastTitleLabel: UILabel!
+  @IBOutlet weak var tapToBeginButton: UIButton!
+  @IBOutlet weak var typePodcastTitleButton: UIButton!
+  @IBOutlet weak var buttonOne: UIButton!
+  @IBOutlet weak var buttonTwo: UIButton!
+  @IBOutlet weak var buttonThree: UIButton!
+  @IBOutlet weak var buttonFour: UIButton!
+  @IBOutlet weak var buttonFive: UIButton!
   
-  @IBOutlet weak var backgroundImageView: UIImageView!
-  internal var drawerView: DrawerView?
-
   private var navigationBar: EachNavigationBar?
   private var navBarHeight: CGFloat = kNavBarHeight
   private var navBar: EachNavigationBar {
@@ -38,7 +47,7 @@ class RecordViewController: UIViewController, DrawerViewDelegate {
   
   private var navItem: UINavigationItem {
     let navitem = UINavigationItem()
-    navitem.title = "Record"
+    navitem.title = "DARKHORSE"
     //    let menuButton = UIBarButtonItem(image: UIImage(named: kImageMenu)!.maskWithColor(color: .black),
     //                                     style: .plain,
     //                                     target: self,
@@ -62,44 +71,37 @@ class RecordViewController: UIViewController, DrawerViewDelegate {
     return navitem
   }
   
+  static func setupViewController() -> PodcastPlayerViewController {
+    let storyboard = UIStoryboard(name: kStoryboardMain,
+                                  bundle: nil)
+    let viewController = storyboard.instantiateViewController(withIdentifier: PodcastPlayerViewController.identifier) as! PodcastPlayerViewController
+    return viewController
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    podcastImageView.applyCornerRadius(0.25)
   }
   
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    // Load Authentication Embed View for Drawer
-    let signinVC = RecordDrawerViewController.setupViewController() as! RecordDrawerViewController
+  @IBAction func typePodcastTitleAction(_ sender: UIButton) {
+  }
   
-    self.addChild(signinVC)
-    
-    // Load Drawer View
-    let drawerview = DrawerView(withView: signinVC.view)
-    drawerview.attachTo(view: self.view)
-    drawerview.snapPositions = [
-      .open,
-      .partiallyOpen,
-    ]
-    drawerview.delegate = self
-    drawerview.backgroundColor = .white
-    drawerview.backgroundEffect = nil // UIBlurEffect(style: .regular)
-    drawerview.insetAdjustmentBehavior = .automatic
-    drawerview.position = .partiallyOpen
-    
-    drawerView = drawerview
+  @IBAction func tapToBeginRecordingAction(_ sender: UIButton) {
+  }
+  
+  @IBAction func buttonOneAction(_ sender: UIButton) {
+  }
+  
+  @IBAction func buttonTwoAction(_ sender: UIButton) {
+  }
+  
+  @IBAction func buttonThreeAction(_ sender: UIButton) {
+  }
+  
+  @IBAction func buttonFourAction(_ sender: UIButton) {
+  }
+  
+  @IBAction func buttonFiveAction(_ sender: Any) {
   }
 
-  func openDrawer(_ sender: UIViewController) {
-    drawerView?.setPosition(
-      .open,
-      animated: true
-    )
-  }
-
-  func drawer(_ drawerView: DrawerView, didTransitionTo position: DrawerPosition) {
-    if position == .closed || position == .partiallyOpen {
-      self.view.endEditing(true)
-    }
-  }
 }
